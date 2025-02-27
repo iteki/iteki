@@ -41,5 +41,18 @@ body {
     height: auto;
 }
 
+/* 添加分割线样式 */
+section {
+    margin-bottom: 40px; /* 调整每个部分之间的间距 */
+    padding-bottom: 20px; /* 调整内容与分割线之间的间距 */
+    border-bottom: 2px solid #e0e0e0; /* 添加分割线，颜色为浅灰色 */
+}
+
+/* 最后一个部分不需要分割线 */
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
 
