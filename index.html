@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>导航</h2>
+        <ul>
+            <li><a href="#about">个人简介</a></li>
+            <li><a href="#gallery">图片展示</a></li>
+            <li><a href="#videos">视频</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="about">
+            <h2>个人简介</h2>
+            <p>这里可以写简介，比如你的兴趣爱好、工作信息等。</p>
+        </section>
+
+        <section id="gallery">
+            <h2>图片轮播</h2>
+            <div class="slideshow-container">
+                <img class="slide" src="images/image1.jpg" alt="图片1">
+                <img class="slide" src="images/image2.jpg" alt="图片2">
+                <img class="slide" src="images/image3.jpg" alt="图片3">
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>视频</h2>
+            <p>这里可以嵌入 YouTube 视频，例如：</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/你的视频ID" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
