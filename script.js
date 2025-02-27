@@ -3,16 +3,10 @@ function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
 }
 
-// 访问量统计（前端去重）
-let visitorCount = parseInt(localStorage.getItem('visitorCount')) || 0;
-const hasVisited = localStorage.getItem('hasVisited');
-
-if (!hasVisited) {
-    visitorCount++;
-    localStorage.setItem('visitorCount', visitorCount);
-    localStorage.setItem('hasVisited', true);
-}
-
+// 访问量统计
+let visitorCount = localStorage.getItem('visitorCount') || 0;
+visitorCount++;
+localStorage.setItem('visitorCount', visitorCount);
 document.getElementById('visitorCount').textContent = visitorCount;
 
 // 滚动动画
