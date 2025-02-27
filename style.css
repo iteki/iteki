@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* 渐变背景 */
+    background-attachment: fixed; /* 固定背景 */
 }
 
 .sidebar {
