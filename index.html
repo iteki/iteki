@@ -9,29 +9,16 @@
 </head>
 <body>
 
-    <!-- 暗黑模式切换按钮 -->
-    <div class="theme-switcher">
-        <button onclick="toggleDarkMode()">🌙 暗黑模式</button>
-    </div>
-
-    <!-- 访问量统计 -->
-    <div class="visitor-counter">
-        <p>访问量: <span id="visitorCount">0</span></p>
-    </div>
-
     <div class="sidebar">
-        <h2>导航</h2>
+        <h2>Guide</h2>
         <ul>
-            <li><a href="#about">个人简介</a></li>
-            <li><a href="#projects">项目展示</a></li>
-            <li><a href="#blog">博客</a></li>
-            <li><a href="#gallery">作品集</a></li>
-            <li><a href="#videos">视频</a></li>
+            <li><a href="#about">Profile</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#videos">Video</a></li>
         </ul>
     </div>
 
     <div class="content">
-        <!-- 个人简介 -->
         <section id="about">
             <h2>Profile</h2>
             <p>游戏开发工程师 ⁄ ゲーム開発エンジニア ⁄ Unity GameEngineer</p>
@@ -40,45 +27,15 @@
             <p>MBTI ˸ ENTJ</p>
             <p>音乐风格 ⁄ 好きな音楽ジャンル ⁄ FavoriteMusicGenre ˸ R＆B Jazz </p>
             <p>Language ˸ Chinese > Japanese > English </p>
-        </section>
-
-        <!-- 项目展示 -->
-        <section id="projects">
-            <h2>项目展示</h2>
-            <div class="project-cards">
-                <div class="project-card">
-                    <h3>项目 1</h3>
-                    <p>这是一个 Unity 游戏开发项目，使用了 C# 和 AR 技术。</p>
-                    <a href="#">查看项目</a>
-                </div>
-                <div class="project-card">
-                    <h3>项目 2</h3>
-                    <p>这是一个 Web 开发项目，使用了 React 和 Node.js。</p>
-                    <a href="#">查看项目</a>
-                </div>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
             </div>
         </section>
 
-        <!-- 博客 -->
-        <section id="blog">
-            <h2>博客</h2>
-            <div class="blog-posts">
-                <div class="blog-post">
-                    <h3>Unity 游戏开发入门</h3>
-                    <p>分享 Unity 游戏开发的基础知识和技巧。</p>
-                    <a href="#">阅读更多</a>
-                </div>
-                <div class="blog-post">
-                    <h3>React 最佳实践</h3>
-                    <p>介绍 React 开发中的一些最佳实践。</p>
-                    <a href="#">阅读更多</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 作品集 -->
         <section id="gallery">
-            <h2>作品集</h2>
+            <h2>Gallery</h2>
             <div class="slideshow-container">
                 <img class="slide" src="images/c80e872a966fa5004b95e6081e52e8f.jpg" alt="图片1">
                 <img class="slide" src="images/c329772f2355944f979516ef5417a12.jpg" alt="图片2">
@@ -86,16 +43,12 @@
             </div>
         </section>
 
-        <!-- 视频 -->
         <section id="videos">
-            <h2>视频</h2>
-            <p>最喜欢的音乐</p>
+            <h2>Video</h2>
+            <p>Faviourate Music</p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/U3n31M81RpE" frameborder="0" allowfullscreen></iframe>
         </section>
     </div>
-
-    <!-- 背景动画 -->
-    <canvas id="backgroundAnimation"></canvas>
 
     <script src="script.js"></script>
 </body>
