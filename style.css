@@ -1,11 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
-    /*background-color: #f0f0f0;*/
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* 渐变背景 */
-    background-attachment: fixed; /* 固定背景 */
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background-attachment: fixed;
 }
 
 .sidebar {
@@ -30,10 +29,33 @@ body {
     color: #333;
 }
 
+.sidebar ul li a:hover {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
 .content {
     margin-left: 220px;
     padding: 20px;
     flex: 1;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+section:last-child {
+    margin-bottom: 0;
 }
 
 .slideshow-container img {
@@ -41,20 +63,35 @@ body {
     max-height: 250px;
     width: auto;
     height: auto;
+    transition: transform 0.3s ease;
 }
 
-/* 添加分割线样式 */
-section {
-    margin-bottom: 40px; /* 调整每个部分之间的间距 */
-    padding-bottom: 20px; /* 调整内容与分割线之间的间距 */
-    border-bottom: 2px solid #e0e0e0; /* 添加分割线，颜色为浅灰色 */
+.slideshow-container img:hover {
+    transform: scale(1.05);
 }
 
-/* 最后一个部分不需要分割线 */
-section:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
 }
 
+.social-links a:hover {
+    text-decoration: underline;
+}
 
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .slideshow-container img {
+        max-width: 100%;
+    }
+}
