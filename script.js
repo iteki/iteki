@@ -1,6 +1,8 @@
-// 夜间模式
+// 暗黑模式切换
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
+
+    // 记住用户的选择，存入 localStorage
     if (document.body.classList.contains('dark-mode')) {
         localStorage.setItem('dark-mode', 'enabled');
     } else {
@@ -8,46 +10,9 @@ function toggleDarkMode() {
     }
 }
 
+// 页面加载时，检查用户是否之前启用了暗黑模式
 document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('dark-mode') === 'enabled') {
         document.body.classList.add('dark-mode');
-    }
-});
-
-// 图片滑动功能
-const gallery = document.querySelector('.gallery');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-gallery.addEventListener('mousedown', (e) => {
-    isDown = true;
-    gallery.classList.add('active');
-    startX = e.pageX - gallery.offsetLeft;
-    scrollLeft = gallery.scrollLeft;
-});
-
-gallery.addEventListener('mouseleave', () => {
-    isDown = false;
-    gallery.classList.remove('active');
-});
-
-gallery.addEventListener('mouseup', () => {
-    isDown = false;
-    gallery.classList.remove('active');
-});
-
-gallery.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - gallery.offsetLeft;
-    const walk = (x - startX) * 2; 
-    gallery.scrollLeft = scrollLeft - walk;
-});
-
-gallery.addEventListener('wheel', (e) => {
-    if (e.shiftKey) {
-        e.preventDefault();
-        gallery.scrollLeft += e.deltaY;
     }
 });
