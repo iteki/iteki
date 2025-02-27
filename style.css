@@ -98,4 +98,59 @@ section:last-child {
     background: #2b2b2b;
 }
 
-.dark-
+.dark-mode .sidebar ul li a {
+    color: #dcdcdc;
+}
+
+.dark-mode .sidebar ul li a:hover {
+    color: #4aa3ff;
+}
+
+.dark-mode section {
+    background: #2b2b2b;
+    color: #f0f0f0;
+}
+
+.dark-mode .slideshow-container img {
+    filter: brightness(0.8);
+}
+
+.dark-mode .social-links a {
+    color: #4aa3ff;
+}
+
+/* 暗黑模式按钮 */
+.dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.dark-mode-toggle button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode-toggle button:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .slideshow-container {
+        width: 100%;
+    }
+}
