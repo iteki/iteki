@@ -34,6 +34,7 @@ body {
 }
 
 .slideshow-container img {
-    max-width: 100%;
-    display: none;
+    width: 400px;  /* 统一宽度 */
+    height: 250px; /* 统一高度 */
+    object-fit: cover; /* 确保填充整个区域，可能会裁剪 */
 }
