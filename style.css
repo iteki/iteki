@@ -34,9 +34,11 @@ body {
 }
 
 .slideshow-container img {
-    width: 100%; /* 保持图片宽度适应容器 */
-    height: auto; /* 让高度自动计算，避免裁剪 */
-    max-height: 100%; /* 防止图片过高 */
+    max-width: 400px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
 }
+
 
 
