@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column; /* 让 body 垂直排列 */
+    min-height: 100vh; /* 确保 body 至少占据 100% 屏幕高度 */
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     background-attachment: fixed;
     color: #333;
@@ -12,7 +14,7 @@ body {
     width: 100px;
     background: #f4f4f4;
     padding: 10px;
-    min-height: 100vh;
+    height: 100%; /* 让 sidebar 填充父容器 */
     position: fixed;
 }
 
@@ -38,7 +40,7 @@ body {
 .content {
     margin-left: 120px;
     padding: 20px;
-    flex: 1;
+    flex: 1; /* 让内容区占据剩余空间 */
     animation: fadeIn 1s ease-in-out;
 }
 
