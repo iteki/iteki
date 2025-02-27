@@ -1,8 +1,8 @@
-html, body {
-    height: 100%;
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     background-attachment: fixed;
     color: #333;
@@ -12,11 +12,8 @@ html, body {
     width: 100px;
     background: #f4f4f4;
     padding: 10px;
-    height: 100%;
+    min-height: 100vh;
     position: fixed;
-    top: 0;
-    left: 0;
-    overflow-y: auto;
 }
 
 .sidebar ul {
@@ -127,29 +124,4 @@ section:last-child {
 
 .dark-mode-toggle:hover {
     background: #555;
-}
-
-/* 移动端样式 */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 10px 0;
-    }
-
-    .content {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .sidebar ul {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .sidebar ul li {
-        margin: 5px;
-    }
 }
