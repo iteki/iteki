@@ -33,8 +33,10 @@ body {
     flex: 1;
 }
 
-.slideshow-container img {
-    width: 400px;  /* 统一宽度 */
-    height: 250px; /* 统一高度 */
-    object-fit: cover; /* 确保填充整个区域，可能会裁剪 */
+.slideshow-container {
+    width: 400px;  /* 限制容器宽度 */
+    height: 250px; /* 限制容器高度 */
+    overflow: hidden; /* 避免超出的部分影响布局 */
+    position: relative; /* 让子元素更好控制 */
 }
+
